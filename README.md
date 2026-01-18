@@ -72,3 +72,27 @@ To run the full system, you need to open **3 separate terminals**:
 Starts the AI engine and database logger.
 ```bash
 python backend.py
+```
+
+### Terminal 2: The Doctor Dashboard
+Opens the Command Center for medical staff.
+
+```Bash
+
+streamlit run doctor_portal.py
+```
+### Terminal 3: The Patient Node
+Opens the user app to simulate a patient.
+
+```Bash
+
+streamlit run patient_portal.py
+```
+
+### (Optional) Terminal 4: Stress Test
+Simulate 50+ patients to test system load.
+
+```Bash
+
+python crowd_sim.py
+```
